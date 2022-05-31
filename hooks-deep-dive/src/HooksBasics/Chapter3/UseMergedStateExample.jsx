@@ -1,6 +1,6 @@
-import { Toolbar } from 'components/Toolbar';
-import { Button } from 'components/Button';
-import { PropsTable } from 'components/PropsTable';
+import { Toolbar } from '../../components/Toolbar';
+import { Button } from '../../components/Button';
+import { PropsTable } from '../../components/PropsTable';
 
 import { useMergedState } from './useMergedState';
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Toolbar } from 'components/Toolbar';
-import { Button } from 'components/Button';
-import { useRerender } from 'hooks/useRerender';
+import { Toolbar } from '../../components/Toolbar';
+import { Button } from '../../components/Button';
+import { useRerender } from '../../hooks/useRerender';
 
 function useBallPosition(step) {
   const [left, setLeft] = useState(0);

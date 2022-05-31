@@ -1,5 +1,5 @@
 import { Button } from 'components/Button';
-import { ValueLabel } from 'components/ValueLabel';
+import { ValueLabel } from '../../components/ValueLabel';
 
 import { useCounter } from './useCounter';
 
