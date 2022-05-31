@@ -1,5 +1,7 @@
 import React from 'react';
 
-export function HooksBasicsSection() {
+const HooksBasicsSection = () => {
   return <div>HooksBasicsSection</div>;
-}
+};
+
+export default HooksBasicsSection;

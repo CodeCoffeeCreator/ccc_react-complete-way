@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function MasterDetail() {
+const MasterDetail = () => {
   return <div>MasterDetail</div>;
-}
+};
+
+export default MasterDetail;

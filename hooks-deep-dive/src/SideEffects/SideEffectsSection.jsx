@@ -1,5 +1,7 @@
 import React from 'react';
 
-export function SideEffectsSection() {
+const SideEffectsSection = () => {
   return <div>SideEffectsSection</div>;
-}
+};
+
+export default SideEffectsSection;

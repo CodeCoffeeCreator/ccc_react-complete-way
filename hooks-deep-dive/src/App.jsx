@@ -1,10 +1,10 @@
 import React from 'react';
 import { MasterDetail } from './components/MasterDetail';
-import { HooksBasicsSection } from './HooksBasics/HooksBasicsSection';
-import { SideEffectsSection } from './SideEffects/SideEffectsSection';
+import HooksBasicsSection from './HooksBasics/HooksBasicsSection';
+import SideEffectsSection from './SideEffects/SideEffectsSection';
 import ImperativeCodeSection from './ImperativeCode/ImperativeCodeSection';
 
-export default function App() {
+const App = () => {
   return (
     <MasterDetail>
       <HooksBasicsSection />
@@ -12,4 +12,6 @@ export default function App() {
       <ImperativeCodeSection />
     </MasterDetail>
   );
-}
+};
+
+export default App;

@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Chapter() {
+const Chapter = () => {
   return <div>Chapter</div>;
-}
+};
+
+export default Chapter;

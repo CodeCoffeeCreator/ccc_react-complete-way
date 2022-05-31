@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Section() {
+const Section = () => {
   return <div>Section</div>;
-}
+};
+
+export default Section;
