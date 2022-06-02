@@ -9,6 +9,7 @@ function useBallPosition(step) {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
+      // eslint-disable-next-line default-case
       switch (event.key) {
         case 'ArrowLeft':
           setLeft((prev) => Math.max(prev - step, 0));
@@ -21,8 +22,6 @@ function useBallPosition(step) {
           break;
         case 'ArrowDown':
           setTop((prev) => prev + step);
-          break;
-        default:
           break;
       }
     };
