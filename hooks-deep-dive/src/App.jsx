@@ -4,6 +4,7 @@ import { HooksBasicsSection } from './HooksBasics/HooksBasicsSection';
 import { SideEffectsSection } from './SideEffects/SideEffectsSection';
 import { ImperativeCodeSection } from './ImperativeCode/ImperativeCodeSection';
 import { MemoizationSection } from './Memoization/MemoizationSection';
+import { AdvancedHooksSection } from './AdvancedHooks/AdvancedHooksSection';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <SideEffectsSection />
       <ImperativeCodeSection />
       <MemoizationSection />
+      <AdvancedHooksSection />
     </MasterDetail>
   );
 };
