@@ -27,7 +27,7 @@ function RandomNumber() {
     case AsyncStatus.IDLE:
       return <button onClick={run}>Request random number</button>;
     case AsyncStatus.PENDING:
-      return <AnimatedText text='Request in progress...' />;
+      return <AnimatedText text="Request in progress..." />;
     case AsyncStatus.SUCCESS:
       return (
         <>

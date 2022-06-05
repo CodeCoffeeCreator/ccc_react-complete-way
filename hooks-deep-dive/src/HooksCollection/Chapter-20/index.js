@@ -57,13 +57,13 @@ export default function Chapter20() {
     <>
       <h2>Chapter 20: useDebounce, useThrottle</h2>
       {path.map((pos, index) => (
-        <Point key={index} left={pos.clientX} top={pos.clientY} color='#F88' />
+        <Point key={index} left={pos.clientX} top={pos.clientY} color="#F88" />
       ))}
       {throttledPath.map((pos, index) => (
-        <Point key={index} left={pos.clientX} top={pos.clientY} color='#8F8' />
+        <Point key={index} left={pos.clientX} top={pos.clientY} color="#8F8" />
       ))}
       {debouncedPath.map((pos, index) => (
-        <Point key={index} left={pos.clientX} top={pos.clientY} color='#88F' />
+        <Point key={index} left={pos.clientX} top={pos.clientY} color="#88F" />
       ))}
     </>
   );

@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef } from 'react';
-import { Toolbar } from '../../components/Toolbar';
-import { Button } from '../../components/Button';
-import { ValueLabel } from '../../components/ValueLabel';
-import { useCounter } from '../../HooksBasics/Chapter3/useCounter';
+import { Toolbar } from 'components/Toolbar';
+import { Button } from 'components/Button';
+import { ValueLabel } from 'components/ValueLabel';
+import { useCounter } from 'HooksBasics/Chapter3/useCounter';
 
 function useUpdateEffect(callback) {
   const firstRenderRef = useRef(true);
@@ -39,7 +39,7 @@ export function UseUpdateEffectExample() {
         <div style={{ minWidth: 100, marginLeft: 20 }}>
           <ValueLabel value={value} />
         </div>
-        <Button text='+1' onClick={increase} />
+        <Button text="+1" onClick={increase} />
       </Toolbar>
     </>
   );

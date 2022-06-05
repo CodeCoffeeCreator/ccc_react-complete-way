@@ -1,5 +1,6 @@
 import { useCallback, useDebugValue, useState } from 'react';
-import { Button } from '../components/Button';
+import { Toolbar } from 'components/Toolbar';
+import { Button } from 'components/Button';
 
 function useToggle(initialValue) {
   const [value, setValue] = useState(initialValue || false);
@@ -25,10 +26,10 @@ function ToggleButton({ toggled, handleToggle }) {
 function SettingsToggle({ label, initialValue }) {
   const [isEnabled, toggleEnabled] = useToggle(initialValue);
   return (
-    <div style={{ margin: 10 }}>
+    <Toolbar>
       <ToggleButton toggled={isEnabled} handleToggle={toggleEnabled} />
       <span style={{ marginLeft: 10 }}>{label}</span>
-    </div>
+    </Toolbar>
   );
 }
 
@@ -36,8 +37,8 @@ export function UseDebugValueExample() {
   return (
     <>
       <h2>Chapter 15: useDebugValue, React Dev Tools</h2>
-      <SettingsToggle label='Audio Enabled' initialValue={true} />
-      <SettingsToggle label='Video Enabled' initialValue={false} />
+      <SettingsToggle label="Audio Enabled" initialValue={true} />
+      <SettingsToggle label="Video Enabled" initialValue={false} />
     </>
   );
 }

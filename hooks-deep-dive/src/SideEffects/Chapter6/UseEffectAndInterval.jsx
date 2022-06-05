@@ -1,4 +1,4 @@
-import { Toolbar } from '../../components/Toolbar';
+import { Toolbar } from 'components/Toolbar';
 import { useState } from 'react';
 
 import { AnimatedEmoji } from './AnimatedEmoji';
@@ -32,7 +32,7 @@ function EmojiSection({ emojis }) {
   return (
     <Toolbar>
       <AnimatedEmoji emojis={emojis} delay={delay} fontSize={64} />
-      <input type='number' value={delay} onChange={handleDelayChange} />
+      <input type="number" value={delay} onChange={handleDelayChange} />
     </Toolbar>
   );
 }

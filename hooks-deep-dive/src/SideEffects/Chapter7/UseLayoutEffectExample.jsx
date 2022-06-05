@@ -40,7 +40,8 @@ export function UseLayoutEffectExample() {
     <div
       ref={divRef}
       style={{ height: '100%', width: '100%', position: 'relative' }}
-      onClick={handleClick}>
+      onClick={handleClick}
+    >
       <h2>Chapter 7. useEffect vs useLayoutEffect</h2>
       <h3>Batching effects with useLayoutEffect</h3>
       {generateDummies(5000)}

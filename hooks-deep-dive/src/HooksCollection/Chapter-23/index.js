@@ -27,7 +27,7 @@ export default function Chapter23() {
       {status === AsyncStatus.IDLE ? (
         <button onClick={run}>Request random number</button>
       ) : status === AsyncStatus.PENDING ? (
-        <AnimatedText text='Request in progress...' />
+        <AnimatedText text="Request in progress..." />
       ) : status === AsyncStatus.SUCCESS ? (
         <>
           <button onClick={run}>Request again</button>

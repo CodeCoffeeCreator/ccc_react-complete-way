@@ -23,8 +23,8 @@ export default function Chapter17() {
   return (
     <>
       <h2>Chapter 17: useToggle version 2.0</h2>
-      <SettingsToggle label='Audio Enabled' initialValue={true} />
-      <SettingsToggle label='Video Enabled' initialValue={true} />
+      <SettingsToggle label="Audio Enabled" initialValue={true} />
+      <SettingsToggle label="Video Enabled" initialValue={true} />
     </>
   );
 }

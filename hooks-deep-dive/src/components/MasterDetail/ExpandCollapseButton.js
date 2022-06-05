@@ -1,6 +1,6 @@
 import './MasterDetail.css';
 
-const ExpandCollapseButton = ({ expanded, onToggle }) => {
+export default function ExpandCollapseButton({ expanded, onToggle }) {
   const expandButtonClass = `expand-collapse-button ${
     expanded ? 'selected' : ''
   }`;
@@ -10,6 +10,4 @@ const ExpandCollapseButton = ({ expanded, onToggle }) => {
       {expanded ? '-' : '+'}
     </button>
   );
-};
-
-export default ExpandCollapseButton;
+}

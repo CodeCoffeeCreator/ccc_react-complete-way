@@ -33,14 +33,14 @@ export default function Chapter29() {
     <>
       <h2>Chapter 29: useMountedRef</h2>
       <div style={styles.headerRow}>
-        <TabHeader text='Cat' isActive={tab === Tabs.cat} onClick={showCat} />
-        <TabHeader text='Dog' isActive={tab === Tabs.dog} onClick={showDog} />
+        <TabHeader text="Cat" isActive={tab === Tabs.cat} onClick={showCat} />
+        <TabHeader text="Dog" isActive={tab === Tabs.dog} onClick={showDog} />
       </div>
       <div style={styles.tabContent}>
         {tab === Tabs.cat ? (
-          <AsyncPicture key='cat-picture' getImageFunc={fetchRandomCat} />
+          <AsyncPicture key="cat-picture" getImageFunc={fetchRandomCat} />
         ) : (
-          <AsyncPicture key='dog-picture' getImageFunc={fetchRandomDog} />
+          <AsyncPicture key="dog-picture" getImageFunc={fetchRandomDog} />
         )}
       </div>
     </>

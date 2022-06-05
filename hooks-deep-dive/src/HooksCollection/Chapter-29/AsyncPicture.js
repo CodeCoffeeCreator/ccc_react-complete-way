@@ -38,7 +38,7 @@ export default function AsyncPicture({ getImageFunc }) {
   return (
     <img
       src={imageUrl}
-      alt='Fetched from external service'
+      alt="Fetched from external service"
       style={styles.image}
     />
   );

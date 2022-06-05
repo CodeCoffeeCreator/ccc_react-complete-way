@@ -8,7 +8,7 @@ function ContactTile({ contact, selected, onClick }) {
 
   return (
     <div className={containerClass} onClick={onClick}>
-      <img src={src} className='contacts-tile-img' alt='Contact avatar' />
+      <img src={src} className="contacts-tile-img" alt="Contact avatar" />
       <div>
         {firstName} {lastName}
       </div>
@@ -29,7 +29,7 @@ export function ContactsGrid() {
   };
 
   return (
-    <div className='contacts-grid'>
+    <div className="contacts-grid">
       {contacts.map((contact) => (
         <ContactTile
           key={contact.id}

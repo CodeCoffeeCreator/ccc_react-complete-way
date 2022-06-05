@@ -38,7 +38,8 @@ export default function Chapter25() {
           theme={VictoryTheme.material}
           domain={domain}
           padding={0}
-          height={40}>
+          height={40}
+        >
           <VictoryLine style={styles.lineChart} data={chartData} />
         </VictoryChart>
       </div>

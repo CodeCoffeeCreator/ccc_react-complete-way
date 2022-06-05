@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
-import { Toolbar } from '../../components/Toolbar';
-import { Button } from '../../components/Button';
+import { Toolbar } from 'components/Toolbar';
+import { Button } from 'components/Button';
 
 import { PinInput } from './PinInput';
 
@@ -21,14 +21,15 @@ export function UseImperativeHandleExample() {
   return (
     <>
       <h2>Chapter 9. useImperativeHandle</h2>
+      <h3>PinInput component</h3>
 
       <Toolbar>
         <PinInput ref={ref} digits={digits} onChange={setDigits} />
       </Toolbar>
 
       <Toolbar>
-        <Button text='Focus' onClick={focus} />
-        <Button text='Clear' onClick={clear} />
+        <Button text="Focus" onClick={focus} />
+        <Button text="Clear" onClick={clear} />
       </Toolbar>
     </>
   );

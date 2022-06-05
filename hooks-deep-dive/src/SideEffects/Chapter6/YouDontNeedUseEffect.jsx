@@ -1,40 +1,11 @@
-import { useEffect, useState } from 'react';
-import { Toolbar } from '../../components/Toolbar';
-import { Button } from '../../components/Button';
-import { useRerender } from '../../hooks/useRerender';
+import { Toolbar } from 'components/Toolbar';
+import { Button } from 'components/Button';
+import { useRerender } from 'hooks/useRerender';
 
-function useBallPosition(step) {
-  const [left, setLeft] = useState(0);
-  const [top, setTop] = useState(0);
+import { useBallPosition } from './useBallPosition';
 
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      // eslint-disable-next-line default-case
-      switch (event.key) {
-        case 'ArrowLeft':
-          setLeft((prev) => Math.max(prev - step, 0));
-          break;
-        case 'ArrowRight':
-          setLeft((prev) => prev + step);
-          break;
-        case 'ArrowUp':
-          setTop((prev) => Math.max(prev - step, 0));
-          break;
-        case 'ArrowDown':
-          setTop((prev) => prev + step);
-          break;
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [step]);
-
-  return [left, top];
-}
+const MIN_STEP = 20;
+const MAX_STEP = 100;
 
 function buildStyle(left, top) {
   return {
@@ -48,20 +19,22 @@ function buildStyle(left, top) {
 }
 
 export function YouDontNeedUseEffect() {
-  const [left, top] = useBallPosition(50);
+  const [left, top] = useBallPosition(MIN_STEP, MAX_STEP);
   const style = buildStyle(left, top);
   const rerender = useRerender();
 
   return (
     <>
       <h2>Chapter 6. useEffect</h2>
-      <h3>You don't need useEffect</h3>
+      <h3>
+        You don't need <i>useEffect</i>. Maybe <i>useMemo</i> will do the thing?
+      </h3>
 
       <Toolbar>
-        <Button text='Click me to re-render the component' onClick={rerender} />
+        <Button text="Click me to re-render the component" onClick={rerender} />
       </Toolbar>
+      <Toolbar>⬅️ ⬆️ ➡️ ⬇️ Use arrow keys to move the ball.</Toolbar>
 
-      <div>Use arrow keys to move the ball.</div>
       <div style={{ position: 'relative' }}>
         <div style={style}>⚽️</div>
       </div>

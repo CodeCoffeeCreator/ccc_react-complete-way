@@ -37,7 +37,7 @@ export default function Chapter19() {
         <button onClick={clearLocalState}>Clear local state</button>
       </p>
       <p>
-        <input type='text' value={text} onChange={onTextChange} />
+        <input type="text" value={text} onChange={onTextChange} />
       </p>
       <HeavyComponent counter={counter} text={text} />
     </>

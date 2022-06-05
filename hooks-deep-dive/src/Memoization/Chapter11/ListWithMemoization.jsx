@@ -1,7 +1,7 @@
 import { useCallback, memo } from 'react';
-import { Toolbar } from '../../components/Toolbar';
-import { Button } from '../../components/Button';
-import { useRerender } from '../../hooks/useRerender';
+import { Toolbar } from 'components/Toolbar';
+import { Button } from 'components/Button';
+import { useRerender } from 'hooks/useRerender';
 
 const ITEMS = [
   { id: '1', name: 'First' },
@@ -40,7 +40,7 @@ export function ListWithMemoization() {
       <h2>Chapter 11. useCallback</h2>
       <h3>List with memoization</h3>
       <Toolbar>
-        <Button text='Click me to re-render' onClick={rerender} />
+        <Button text="Click me to re-render" onClick={rerender} />
       </Toolbar>
       <List items={ITEMS} />
     </>

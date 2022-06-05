@@ -49,7 +49,7 @@ export default function Chapter27() {
         <button onClick={resumeSpawning}>RESUME</button>
       )}
 
-      <div className='spawnArea' ref={spawnAreaRef}>
+      <div className="spawnArea" ref={spawnAreaRef}>
         {particles.map((p) => (
           <Particle key={p.id} {...p} />
         ))}

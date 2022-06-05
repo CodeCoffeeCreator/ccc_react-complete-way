@@ -1,4 +1,4 @@
-import { useToggle } from '../../HooksCollection/Chapter-17/useToggle';
+import { useToggle } from 'HooksCollection/Chapter-17/useToggle';
 import {
   createContext,
   useCallback,
@@ -48,21 +48,21 @@ export default function MasterDetail({ children }) {
   };
 
   return (
-    <div className='container'>
-      <div className='master' style={masterStyle}>
+    <div className="container">
+      <div className="master" style={masterStyle}>
         {expanded && (
           <Context.Provider value={contextValue}>{children}</Context.Provider>
         )}
       </div>
 
-      <div className='detail'>
+      <div className="detail">
         <Suspense fallback={<Loading />}>
           {DetailComponent && <DetailComponent />}
         </Suspense>
       </div>
 
-      <div className='master-expand-container' style={masterStyle}>
-        <div className='master-expand-button'>
+      <div className="master-expand-container" style={masterStyle}>
+        <div className="master-expand-button">
           <ExpandCollapseButton expanded={expanded} onToggle={toggleExpanded} />
         </div>
       </div>

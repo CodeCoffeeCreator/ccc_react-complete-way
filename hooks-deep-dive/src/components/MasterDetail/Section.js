@@ -24,13 +24,13 @@ export default function Section({ title, children }) {
 
   return (
     <>
-      <div className='section' onClick={toggleExpanded}>
-        <div className='section-button'>
+      <div className="section" onClick={toggleExpanded}>
+        <div className="section-button">
           <ExpandCollapseButton expanded={expanded} />
         </div>
         <div style={titleStyle}>{title}</div>
       </div>
-      {expanded && <div className='section-content'>{children}</div>}
+      {expanded && <div className="section-content">{children}</div>}
     </>
   );
 }

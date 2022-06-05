@@ -15,5 +15,5 @@ export function UserAvatar() {
     objectFit: 'cover',
   };
 
-  return <img src={src} alt='User avatar' style={style} />;
+  return <img src={src} alt="User avatar" style={style} />;
 }

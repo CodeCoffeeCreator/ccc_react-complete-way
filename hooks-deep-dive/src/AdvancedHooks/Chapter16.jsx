@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { Toolbar } from '../components/Toolbar';
+import { Toolbar } from 'components/Toolbar';
 
 function createMappedState(mapper) {
   return function (initialValue) {
@@ -30,7 +30,7 @@ function Field({ label, value, onChange }) {
     <Toolbar>
       <div style={{ minWidth: 200 }}>{label}</div>
       <input
-        type='text'
+        type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
       />
@@ -46,9 +46,9 @@ export function HooksFactory() {
   return (
     <>
       <h2>Chapter 16: Hooks Factory</h2>
-      <Field label='lowercase only' value={lowercase} onChange={setLowercase} />
-      <Field label='UPPERCASE ONLY' value={uppercase} onChange={setUppercase} />
-      <Field label='NoSpacesHere' value={noSpaces} onChange={setNoSpaces} />
+      <Field label="lowercase only" value={lowercase} onChange={setLowercase} />
+      <Field label="UPPERCASE ONLY" value={uppercase} onChange={setUppercase} />
+      <Field label="NoSpacesHere" value={noSpaces} onChange={setNoSpaces} />
     </>
   );
 }

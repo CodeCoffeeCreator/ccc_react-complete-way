@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Toolbar } from '../components/Toolbar';
-import { Button } from '../components/Button';
-import { ValueLabel } from '../components/ValueLabel';
+import { Toolbar } from 'components/Toolbar';
+import { Button } from 'components/Button';
+import { ValueLabel } from 'components/ValueLabel';
 
 const DELAY = 2000;
 const FIBONACCI = [1, 1];
@@ -40,13 +40,13 @@ export function PreviousStateUpdate() {
         <div style={{ minWidth: 150, marginLeft: 16 }}>
           <ValueLabel value={isClicksVisible ? clicks : '?'} />
         </div>
-        <Button onClick={incrementCounter} text='Increment counter' />
-        <Button onClick={incrementWithDelay} text='Increment with delay' />
-        <Button onClick={toggleShowClicks} text='Toggle show clicks' />
+        <Button onClick={incrementCounter} text="Increment counter" />
+        <Button onClick={incrementWithDelay} text="Increment with delay" />
+        <Button onClick={toggleShowClicks} text="Toggle show clicks" />
       </Toolbar>
 
       <Toolbar>
-        <Button text='Add Fibonacci number' onClick={addFibonacci} />
+        <Button text="Add Fibonacci number" onClick={addFibonacci} />
       </Toolbar>
       <div>Fibonacci sequence: {fibonacci.join(', ')}</div>
     </>

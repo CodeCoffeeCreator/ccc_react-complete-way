@@ -49,30 +49,30 @@ export default function Chapter21() {
     <>
       <h2>Chapter 21: useLocalStorage</h2>
       <input
-        type='text'
+        type="text"
         style={inputStyle}
-        placeholder='First name'
+        placeholder="First name"
         value={user.firstName}
         onChange={updateFirstName}
       />
       <input
-        type='text'
+        type="text"
         style={inputStyle}
-        placeholder='Last name'
+        placeholder="Last name"
         value={user.lastName}
         onChange={updateLastName}
       />
       <input
-        type='text'
+        type="text"
         style={inputStyle}
-        placeholder='Position'
+        placeholder="Position"
         value={position}
         onChange={updatePosition}
       />
       <input
-        type='number'
+        type="number"
         style={inputStyle}
-        placeholder='Age'
+        placeholder="Age"
         value={age}
         onChange={updateAge}
       />

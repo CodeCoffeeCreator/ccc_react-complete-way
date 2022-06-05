@@ -31,20 +31,20 @@ export function ConsoleViewer() {
   };
 
   return (
-    <div className='console-container'>
-      <button className='console-clear' onClick={clear}>
+    <div className="console-container">
+      <button className="console-clear" onClick={clear}>
         Clear
       </button>
-      <div className='console-scroll'>
+      <div className="console-scroll">
         {messages.map(({ id, timestamp, text }) => (
           <div key={id}>
-            <span className='console-timestamp'>
+            <span className="console-timestamp">
               [{format(timestamp, 'HH:mm:ss')}]
             </span>{' '}
             {text}
           </div>
         ))}
-        <div ref={footer} className='console-footer' />
+        <div ref={footer} className="console-footer" />
       </div>
     </div>
   );

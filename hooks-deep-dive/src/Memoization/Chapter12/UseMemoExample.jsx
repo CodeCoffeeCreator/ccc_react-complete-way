@@ -1,10 +1,11 @@
 import { memo, useMemo } from 'react';
-import { useRerender } from '../../hooks/useRerender';
-import { Toolbar } from '../../components/Toolbar';
-import { Button } from '../../components/Button';
+import { useRerender } from 'hooks/useRerender';
+import { Toolbar } from 'components/Toolbar';
+import { Button } from 'components/Button';
+import { ColoredBlock } from 'components/ColoredBlock';
 
 import { Leaf } from './Leaf';
-import { buildStyle } from './buildStyle';
+import { nodeStyle } from './nodeStyle';
 
 const MemoizedNode = memo(({ level, maxLevel, path }) => {
   const rerender = useRerender();
@@ -21,10 +22,10 @@ const MemoizedNode = memo(({ level, maxLevel, path }) => {
   }
 
   return (
-    <div style={buildStyle()} onClick={handleClick}>
+    <ColoredBlock style={nodeStyle} onClick={handleClick}>
       <MemoizedNode level={level + 1} maxLevel={maxLevel} path={leftPath} />
       <MemoizedNode level={level + 1} maxLevel={maxLevel} path={rightPath} />
-    </div>
+    </ColoredBlock>
   );
 });
 
@@ -38,7 +39,7 @@ export function UseMemoExample() {
 
       <Toolbar>
         <Button
-          text='Click me to re-render the whole thing'
+          text="Click me to re-render the whole thing"
           onClick={rerender}
         />
       </Toolbar>
