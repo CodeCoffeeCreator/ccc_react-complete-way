@@ -1,5 +1,5 @@
 import { Children } from 'react';
-import { ColoredBlock } from '../components/ColoredBlock';
+import { ColoredBlock } from 'components/ColoredBlock';
 
 const styles = {
   row: {
