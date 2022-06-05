@@ -5,7 +5,7 @@ import { ImperativeCodeSection } from 'ImperativeCode/ImperativeCodeSection';
 import { MemoizationSection } from 'Memoization/MemoizationSection';
 import { AdvancedHooksSection } from 'AdvancedHooks/AdvancedHooksSection';
 import { HooksCollectionSection } from 'HooksCollection/HooksCollectionSection';
-// import { DataFecthingSection } from 'DataFecthing/DataFetchingSection';
+import { DataFecthingSection } from 'DataFecthing/DataFetchingSection';
 import { BonusSection } from 'Bonus/BonusSection';
 // import { MiniAppsSection } from 'MiniApps/MiniAppsSection';
 
@@ -19,8 +19,8 @@ export default function App() {
       <AdvancedHooksSection />
       <HooksCollectionSection />
       <BonusSection />
-      {/* <DataFecthingSection />
-      <MiniAppsSection /> */}
+      <DataFecthingSection />
+      {/* <MiniAppsSection /> */}
     </MasterDetail>
   );
 }
