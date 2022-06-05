@@ -1,6 +1,6 @@
-import { Toolbar } from 'components/Toolbar';
-import { Button } from 'components/Button';
-import { useRerender } from 'hooks/useRerender';
+import { Toolbar } from '../../components/Toolbar';
+import { Button } from '../../components/Button';
+import { useRerender } from '../../hooks/useRerender';
 
 const ITEMS = [
   { id: '1', name: 'First' },

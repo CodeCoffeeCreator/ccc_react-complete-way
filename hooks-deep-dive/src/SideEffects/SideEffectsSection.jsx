@@ -1,4 +1,4 @@
-import { Section, Chapter } from 'components/MasterDetail';
+import { Section, Chapter } from '../components/MasterDetail';
 import { UseEffectBasics } from './Chapter6/UseEffectBasics';
 import { UseEffectAndInterval } from './Chapter6/UseEffectAndInterval';
 import { YouDontNeedUseEffect } from './Chapter6/YouDontNeedUseEffect';
