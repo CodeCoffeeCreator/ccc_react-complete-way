@@ -2,6 +2,7 @@
   "name": "search-movies",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codecoffeecreator.github.io/ccc_react-complete-way/search-movies",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
