@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ccc_react-complete-way/search-movies/static/css/main.843b2c35.css",
+    "main.js": "/ccc_react-complete-way/search-movies/static/js/main.ebe8d032.js",
+    "index.html": "/ccc_react-complete-way/search-movies/index.html",
+    "main.843b2c35.css.map": "/ccc_react-complete-way/search-movies/static/css/main.843b2c35.css.map",
+    "main.ebe8d032.js.map": "/ccc_react-complete-way/search-movies/static/js/main.ebe8d032.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.843b2c35.css",
+    "static/js/main.ebe8d032.js"
+  ]
+}
