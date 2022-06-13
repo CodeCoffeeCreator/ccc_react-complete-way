@@ -1,15 +1,15 @@
 function Footer() {
   return (
-    <footer className='page-footer green lighten-4'>
-      <div className='footer-copyright'>
+    <footer className='page-footer white'>
+      <div className='footer-copyright purple'>
         <div className='container'>
           Copyright © {new Date().getFullYear()} CodeCoffeeCreator
           <a
             className='grey-text text-lighten-4 right'
-            href='https://github.com/CodeCoffeeCreator'
-            rel='noreferrer'
-            target='_blank'>
-            CodeCoffeCreator Repository
+            href='https://github.com/CodeCoffeeCreator/ccc_react-complete-way'
+            target='_blank'
+            rel='noreferrer'>
+            CodeCoffeeCreator repository
           </a>
         </div>
       </div>

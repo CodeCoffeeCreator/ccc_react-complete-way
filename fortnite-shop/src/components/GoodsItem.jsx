@@ -1,12 +1,10 @@
+import { useContext } from 'react';
+import { ShopContext } from '../context';
+
 function GoodsItem(props) {
-  const {
-    id,
-    name,
-    description,
-    price,
-    full_background,
-    addToBasket = Function.prototype,
-  } = props;
+  const { id, name, description, price, full_background } = props;
+
+  const { addToBasket } = useContext(ShopContext);
 
   return (
     <div className='card'>
@@ -30,7 +28,7 @@ function GoodsItem(props) {
           Купить
         </button>
         <span className='right' style={{ fontSize: '1.8rem' }}>
-          {price} $
+          {price} coins.
         </span>
       </div>
     </div>
