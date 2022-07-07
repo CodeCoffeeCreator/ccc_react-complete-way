@@ -25,7 +25,7 @@ function Search({ cb = Function.prototype }) {
           value={value}
         />
         <button
-          className='btn'
+          className='btn purple'
           style={{
             position: 'absolute',
             top: 0,

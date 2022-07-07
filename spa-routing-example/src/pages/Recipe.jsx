@@ -14,12 +14,15 @@ function Recipe() {
 
   return (
     <>
+      <button className='btn purple' onClick={goBack}>
+        Go Back
+      </button>
       {!recipe.idMeal ? (
         <Preloader />
       ) : (
-        <div className='recipe'>
+        <div className='recipe center'>
           <img src={recipe.strMealThumb} alt={recipe.strMeal} />
-          <h1>{recipe.strMeal}</h1>
+          <h3>{recipe.strMeal}</h3>
           <h6>Category: {recipe.strCategory}</h6>
           {recipe.strArea ? <h6>Area: {recipe.strArea}</h6> : null}
           <p>{recipe.strInstructions}</p>
@@ -54,13 +57,13 @@ function Recipe() {
                 src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(
                   -11
                 )}`}
-                allowfullscreen
+                allowFullScreen
               />
             </div>
           ) : null}
         </div>
       )}
-      <button className='btn' onClick={goBack}>
+      <button className='btn purple' onClick={goBack}>
         Go Back
       </button>
     </>

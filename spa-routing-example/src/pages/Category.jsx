@@ -16,10 +16,13 @@ function Category() {
 
   return (
     <>
-      <button className='btn' onClick={goBack}>
+      <button className='btn purple' onClick={goBack}>
         Go Back
       </button>
       {!meals.length ? <Preloader /> : <MealList meals={meals} />}
+      <button className='btn purple' onClick={goBack}>
+        Go Back
+      </button>
     </>
   );
 }
